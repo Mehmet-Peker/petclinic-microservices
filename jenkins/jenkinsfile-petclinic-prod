@@ -55,7 +55,6 @@ pipeline {
         }
         stage('Deploy App on Petclinic Kubernetes Cluster'){
             steps {
-                steps {
                 echo 'Deploying App on Kubernetes Cluster'
                 sh '. ./jenkins/deploy-prod.sh'
             }
